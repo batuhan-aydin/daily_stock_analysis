@@ -123,7 +123,7 @@ class YfinanceFetcher(BaseFetcher):
             return f"{hk_code}.HK"
 
         # 已经包含后缀的情况
-        if '.SS' in code or '.SZ' in code or '.HK' in code or '.BJ' in code:
+        if '.SS' in code or '.SZ' in code or '.HK' in code or '.BJ' in code or '.IS' in code:
             return code
 
         # 去除可能的 .SH 后缀
